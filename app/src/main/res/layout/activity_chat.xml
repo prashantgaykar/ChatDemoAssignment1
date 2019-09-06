@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.chat.ChatActivity"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/chat_unit" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_layout_height"
+        android:layout_margin="@dimen/small_margin"
+        android:padding="@dimen/small_padding"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgBtnAdd"
+            android:layout_width="@dimen/bottom_layout_btn_size"
+            android:layout_height="@dimen/bottom_layout_btn_size"
+            android:background="@drawable/add_btn_gradient"
+            android:contentDescription="@string/add_attachment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:background="@drawable/rounded_shape"
+            android:hint="@string/hint_type_msg_here"
+            android:imeOptions="actionDone"
+            android:maxLength="140"
+            android:paddingLeft="@dimen/edit_text_message_padding"
+            android:paddingTop="@dimen/small_padding"
+            android:paddingRight="@dimen/edit_text_message_padding"
+            android:paddingBottom="@dimen/small_padding"
+            android:singleLine="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/imgBtnAdd"
+            app:layout_constraintRight_toLeftOf="@+id/imgBtnMic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imgBtnMic"
+            android:layout_width="@dimen/bottom_layout_btn_size"
+            android:layout_height="@dimen/bottom_layout_btn_size"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:background="@null"
+            android:contentDescription="@string/send_audio_recording"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/imgBtnCamera"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_mic" />
+
+        <ImageButton
+            android:id="@+id/imgBtnCamera"
+            android:layout_width="@dimen/bottom_layout_btn_size"
+            android:layout_height="@dimen/bottom_layout_btn_size"
+            android:background="@null"
+            android:contentDescription="@string/capture_and_send_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_camera" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

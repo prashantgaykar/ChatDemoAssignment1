@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/normal_padding">
+
+    <TextView
+        android:id="@+id/textViewNameInitials"
+        style="@style/AppTheme.Subtitle1"
+        android:layout_width="@dimen/bottom_layout_btn_size"
+        android:layout_height="@dimen/bottom_layout_btn_size"
+        android:background="@drawable/display_pic_shape"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="JG" />
+
+    <TextView
+        android:id="@+id/textViewIncomingMessageInfo"
+        style="@style/AppTheme.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:textSize="@dimen/chat_info_text_size"
+        app:layout_constraintLeft_toRightOf="@id/textViewNameInitials"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Jyoti Gaykar, 11:09 AM" />
+
+    <TextView
+        android:id="@+id/textViewIncomingMessage"
+        style="@style/AppTheme.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/very_small_margin"
+        android:background="@drawable/incoming_chat_bubble_shape"
+        android:gravity="start"
+        android:paddingStart="@dimen/normal_padding"
+        android:paddingTop="@dimen/normal_padding"
+        android:paddingEnd="@dimen/incoming_chat_end_padding"
+        android:paddingBottom="@dimen/normal_padding"
+        android:textAlignment="gravity"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/textViewNameInitials"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineIncomingMessage"
+        app:layout_constraintTop_toBottomOf="@id/textViewIncomingMessageInfo"
+        tools:text="This is a sample chat with sample text, let me check that.This is a sample chat with sample text,.This is a sample chat with sample text,.This is a sample chat with sample text," />
+
+    <ImageView
+        android:id="@+id/imgViewEmoticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/send_emoticons"
+        app:layout_constraintRight_toRightOf="@id/textViewIncomingMessage"
+        app:layout_constraintTop_toTopOf="@id/textViewIncomingMessage"
+        app:srcCompat="@drawable/ic_emoticon" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineIncomingMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineOutgoingMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/textViewOutgoingMessageInfo"
+        style="@style/AppTheme.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/chat_info_text_size"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="12:09 AM" />
+
+    <TextView
+        android:id="@+id/textViewOutgoingMessage"
+        style="@style/AppTheme.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outgoing_chat_bubble_shape"
+        android:gravity="start"
+        android:padding="@dimen/normal_padding"
+        android:paddingStart="@dimen/outgoing_chat_start_padding"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/guidelineOutgoingMessage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewOutgoingMessageInfo"
+        tools:text="This is a sample chat with sample text, let me check that.This is a sample chat with sample text,.This is a sample chat with sample text,.This is a sample chat with sample text," />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<backgroundColor name="colorPrimary">#008577</backgroundColor>
+    <backgroundColor name="colorPrimaryDark">#00574B</backgroundColor>
+    <backgroundColor name="colorAccent">#D81B60</backgroundColor>-->
+
+    <color name="colorPrimary">#258FD5</color>
+    <color name="colorPrimaryDark">#258fd5</color>
+    <color name="colorAccent">#7c4dff</color>
+
+    <color name="waterBlue">#258FD5</color>
+
+    <color name="attachmentBtnGradientStart">#E262A6</color>
+    <color name="attachmentBtnGradientEnd">#1686D9</color>
+
+    <color name="appGradientWaterBlueTwo">#1988D8</color>
+    <color name="appGradientPaleTeal">#82C7BF</color>
+    <color name="appGradientPaleTealTwo">#70BCC4</color>
+    <color name="appGradientBlack">#84C8BF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#e0e0e0</color>
+
+</resources>
