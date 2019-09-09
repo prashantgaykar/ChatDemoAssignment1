@@ -16,7 +16,7 @@ class DatabaseService @Inject constructor(@DatabaseInfo var dbName: String, @Dat
     fun sendDummyAutoOutgoingReply(): Message {
         return Message(
             1,
-            "Hello, this is first auto reply from your side, now you can type and send message on your own.",
+            "Hello, Avengers lets not fight with each other.\nSave the world together.",
             Date(),
             DummyData.dummyCurrentUser,
             MessageType.OUTGOING

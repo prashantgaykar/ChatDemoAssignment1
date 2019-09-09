@@ -16,14 +16,14 @@ class NetworkService @Inject constructor(@NetworkInfo var apiKey: String) {
     private val incomingMessages: List<Message> = mutableListOf(
         Message(
             1,
-            "Hey there I am Prashant Gaykar, looking forward for the next round.",
+            "Big man in a suit of armor. Take that off, what are you?",
             Date(),
             DummyData.dummyUser1,
             MessageType.INCOMING
         ),
         Message(
             2,
-            "Hello this is Hrithik Roshan. Have you seen my movie SUPER 30 ??",
+            "Genius billionaire playboy philanthropist.",
             Date(),
             DummyData.dummyUser2,
             MessageType.INCOMING

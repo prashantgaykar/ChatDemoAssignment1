@@ -6,8 +6,8 @@ import org.prashantgaykar.leadschoolassignment1.data.model.User
 object DummyData {
 
     val dummyCurrentUser = User(3, "YourFirstName", "YourLastName", "#000000", "#FFFFFF")
-    val dummyUser1 = User(1, "Prashant", "Gaykar", "#3f51b5", "#FFFFFF")
-    val dummyUser2 = User(2, "Hrithik", "Roshan", "#f44336", "#FFFFFF")
+    val dummyUser1 = User(1, "Steve", "Rogers", "#f44336", "#FFFFFF")
+    val dummyUser2 = User(2, "Tony", "Stark", "#3f51b5", "#FFFFFF")
 
     val dummyEmoticonList: MutableList<Emoticon> = mutableListOf(
         Emoticon(0x1F600, "grinning face"),
